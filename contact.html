@@ -1,0 +1,86 @@
+---
+layout: default
+custom_js:
+- assets/plugins/jquery.validate.min.js
+- http://maps.google.com/maps/api/js?sensor=true
+- assets/plugins/gmaps/gmaps.js
+- assets/js/contact.js
+- assets/js/map.js
+---
+
+        <div class="headline-bg contact-headline-bg">
+        </div><!--//headline-bg-->
+
+        
+        <!-- ******Contact Section****** --> 
+        <section class="contact-section section section-on-bg">
+            <div class="container">
+                <h2 class="title text-center">Book Free Breakthrough Session</h2>
+                <p class="intro text-center">This is a chance for you to meet the coach and find out more on how to transform your body.</p>
+                
+                <form id="contact-form" class="contact-form" action="send_form_email.php" method="post">                    
+                    <div class="row text-center">
+                        <div class="contact-form-inner col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-sm-offset-0 xs-offset-0">
+                            <div class="row">                                                           
+                                
+                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                    <label class="sr-only" for="name">Your name</label>
+                                    <input type="text" class="form-control" name="name" placeholder="Your name" minlength="2" required>
+                                </div> 
+
+                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                    <label class="sr-only" for="email">Email address</label>
+                                    <input type="email" class="form-control" name="email" placeholder="Your email address" required>
+                                </div>
+
+                                <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                                    <label class="sr-only" for="comments">Your message</label>
+                                    <textarea class="form-control" name="comments" placeholder="Enter your message" rows="12" required></textarea>
+                                </div>
+
+                                <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                                    <input type="submit" name="submit" class="btn btn-block btn-cta btn-cta-primary" value="Send Message">
+                                </div>   
+
+                            </div><!--//row-->
+                        </div>
+                    </div><!--//row-->
+                    <div id="form-messages"></div>
+                </form><!--//contact-form-->
+
+            </div><!--//container-->
+        </section><!--//contact-section-->
+        
+
+        <!-- ******Other Contact Section****** --> 
+        <section class="contact-other-section section">
+            <div class="container text-center">
+                <h2 class="title">Other ways to reach us</h2>
+                <p class="intro">You can also book your Free Breakthrough Session using any of the contact methods below.</p>
+                <div class="row">
+                    <ul class="other-info list-unstyled col-md-6 col-sm-10 col-xs-12 col-md-offset-3 col-sm-offset-1 xs-offset-0" >
+                        <li><i class="fa fa-envelope-o"></i><a href="mailto:kiforce.training@gmail.com?Subject=Free%20Breakthrough%20Session">kiforce.training@gmail.com</a></li>
+                        <li><i class="fa fa-instagram"></i><a href="https://www.instagram.com/kiforce/" target="_blank">@kiforce</a></li>
+                        <li><i class="fa fa-phone"></i><a href="tel:07446719444">0744 6719 444</a></li>
+                        <li><i class="fa fa-map-marker"></i>Lift <br /> 45 White Lion Street<br />N1 9PW<br />London<br />UK</li>
+                    </ul>
+                </div><!--//row-->
+            </div><!-- //container-->
+        </section><!--//contact-other-section-->
+        
+        <!-- ******Map Section****** --> 
+        <section class="map-section section">
+            <div class="container text-center">
+                <h2 class="title">How to find us</h2><br />
+                <!--p class="intro">Pellentesque efficitur lobortis massa eu sodales. Morbi eu ipsum euismod felis commodo porttitor quis sit amet leo. Sed lacinia eu ipsum sit amet tempus.</p-->
+                <div class="gmap-wrapper">
+                    <div class="gmap" id="map"></div>
+                </div>
+            </div>
+        </section><!--//map-section-->
+        
+
+    </div><!--//wrapper-->
+
+
+    
