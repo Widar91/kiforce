@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
@@ -59,7 +62,30 @@
             <h2 class="page-title text-center">Deep into the Science</h2>
             <div class="row">
                 <div class="blog-list blog-category-list">
-                    
+                    <!--
+                    {% for post in site.posts %}
+                        <article class="post col-md-10 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
+                            <div class="post-inner">
+                                <figure class="post-thumb">
+                                    <img class="img-responsive" src="assets/images/blog/***IMAGE***.jpg" alt="" />                                
+                                </figure>
+                                <div class="content">
+                                    <h3 class="post-title">{{ post.title }}</h3>
+                                    <div class="meta">
+                                        <ul class="meta-list list-inline">                                       
+                                            <li class="post-time">{{ post.date | date: "%b %-d, %Y" }}</li>
+                                            <li class="post-author"> by Davide Alfonsi</li>
+                                        </ul>                           
+                                    </div>
+                                    <div class="post-entry">
+                                        <p>***FIRST PARAGRAPH***</p>
+                                        <a class="read-more" href="{{ post.url | prepend: site.baseurl }}">Read more <i class="fa fa-long-arrow-right"></i></a>
+                                    </div>                                
+                                </div>
+                            </div>
+                        </article>
+                    {% endfor %}
+                    -->
                     <article class="post col-md-10 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
                         <div class="post-inner">
                             <figure class="post-thumb">
