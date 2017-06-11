@@ -3265,6 +3265,13 @@ select {
 }
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
+  .bg-slider-wrapper .flexslider .slide.slide-rt4 {
+    background: #253340 url('../images/background/rt4-responsive.jpg') no-repeat 50% bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
   .config-wrapper {
     display: none;
   }
