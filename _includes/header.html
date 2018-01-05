@@ -1,9 +1,10 @@
-<!-- ******HEADER****** --> 
-<header id="header" class="header navbar-fixed-top">  
-    <div class="container">       
+<!-- ******HEADER****** -->
+<header id="header" class="header navbar-fixed-top">
+    <div class="container">
         <h1 class="logo">
             <a href="index.html"><span class="logo-icon"></span><span class="text">KI-FORCE</span></a>
-        </h1><!--//logo-->
+        </h1>
+        <!--//logo-->
         <nav class="main-nav navbar-right" role="navigation">
             <div class="navbar-header">
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
@@ -11,14 +12,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button><!--//nav-toggle-->
-            </div><!--//navbar-header-->
+                </button>
+                <!--//nav-toggle-->
+            </div>
+            <!--//navbar-header-->
             <div id="navbar-collapse" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li {% if page.url == '/index.html' %} class="active nav-item" {% else %} class="nav-item"{% endif %} >
+                    <li {% if page.url=='/index.html' %} class="active nav-item" {% else %} class="nav-item" {% endif %}>
                         <a href="index.html">Home</a></li>
 
-                    <li {% if page.url == '/transformation.html' %} class="active nav-item" {% else %} class="nav-item"{% endif %} >
+                    <li {% if page.url=='/transformation.html' %} class="active nav-item" {% else %} class="nav-item" {% endif %}>
                         <a href="transformation.html">Transformations</a></li>
 
                     <!--li {% if page.url == '/celebrities.html' %} class="active nav-item" {% else %} class="nav-item"{% endif %} >
@@ -26,19 +29,24 @@
 
                     <!--li {% if page.url == '/tv.html' %} class="active nav-item" {% else %} class="nav-item"{% endif %} >
                         <a href="tv.html">TV</a></li-->
-                    
-                    <li {% if page.url == '/rt4.html' %} class="active nav-item" {% else %} class="nav-item"{% endif %} >
-                        <a href="rt4.html">At Home PT</a></li>
 
-                    <li {% if page.url == '/blog.html' %} class="active nav-item" {% else %} class="nav-item"{% endif %} >
+                    <!-- li {% if page.url == '/rt4.html' %} class="active nav-item" {% else %} class="nav-item"{% endif %} >
+                        <a href="rt4.html">At Home PT</a></li-->
+
+                    <li {% if page.url=='/blog.html' %} class="active nav-item" {% else %} class="nav-item" {% endif %}>
                         <a href="blog.html">Blog</a></li>
 
-                    <li {% if page.url == '/about.html' %} class="active nav-item" {% else %} class="nav-item"{% endif %} >
+                    <li {% if page.url=='/about.html' %} class="active nav-item" {% else %} class="nav-item" {% endif %}>
                         <a href="about.html">About Davide</a></li>
 
                     <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="contact.html">Get in Touch</a></li>
-                </ul><!--//nav-->
-            </div><!--//navabr-collapse-->
-        </nav><!--//main-nav-->                     
-    </div><!--//container-->
-</header><!--//header-->
+                </ul>
+                <!--//nav-->
+            </div>
+            <!--//navabr-collapse-->
+        </nav>
+        <!--//main-nav-->
+    </div>
+    <!--//container-->
+</header>
+<!--//header-->
