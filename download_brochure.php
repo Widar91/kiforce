@@ -19,7 +19,7 @@ if(isset($_POST['submit'])) {
     $body = "
         <center><img src=\"cid:cover\" alt=\"cover\" height=\"300\" width=\"200\"></center>
         <p style=\"text-align: center;\">
-            Thank you for downloading <b><i>Five Keys to Weight Loss</i></b>.<br/>
+            Thank you for downloading <b><i>Stress Free in 7 Simple Steps</i></b>.<br/>
             You will find your free copy attached to this email.
         </p>
 
@@ -67,7 +67,7 @@ if(isset($_POST['submit'])) {
     
     //if(mail($kiforce,$subject,$message1,$headers1) && mail($customer, $subject, $message2, $headers2)){
     if ($email2->Send() && $email->Send()) {
-        $success = "Thank you " . $customer_name . ", you will soon receive an email containing your free copy of \"Five Keys to Weight Loss\".";
+        $success = "Thank you " . $customer_name . ", you will soon receive an email containing your free copy of \"Stress Free in 7 Simple Steps\".";
     } else {
         $success = "Oops.. An error has occurred, please try inserting your name and email again.";
     }
